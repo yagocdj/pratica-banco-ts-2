@@ -6,4 +6,8 @@ class ClienteEspecial extends Cliente {
     get listaDeDependentes() {
         return this._listaDeDependentes;
     }
+    toString() {
+        return `ClienteEspecial[nome=${super.nome}, cpf=${super.cpf}, conta=${super.conta}, 
+        listaDeDependentes=${this._listaDeDependentes}]`;
+    }
 }

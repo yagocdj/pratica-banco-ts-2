@@ -1,7 +1,8 @@
 class Cliente {
-    constructor(nome, cpf) {
+    constructor(nome, cpf, conta = undefined) {
         this._nome = nome;
         this._cpf = cpf;
+        this._conta = conta;
     }
     get nome() {
         return this._nome;
